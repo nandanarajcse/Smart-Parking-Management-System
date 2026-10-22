@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Parking</h1>
+        <p>Smart Parking Management System</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#parking">Parking Slots</a>
+        <a href="#manage">Manage Vehicles</a>
+        <a href="#records">Records</a>
+    </nav>
+
+    <main>
+        <section id="dashboard" class="welcome">
+            <h2>Welcome to Smart Parking</h2>
+            <p>Manage parking slots, vehicles and waiting lists
+               in one place.</p>
+        </section>
+
+        <section class="summary">
+            <div class="card">
+                <h3>Total Slots</h3>
+                <p>5</p>
+            </div>
+
+            <div class="card">
+                <h3>Available Slots</h3>
+                <p>5</p>
+            </div>
+
+            <div class="card">
+                <h3>Occupied Slots</h3>
+                <p>0</p>
+            </div>
+
+            <div class="card">
+                <h3>Waiting Vehicles</h3>
+                <p>0</p>
+            </div>
+        </section>
+
+        <section id="parking" class="panel">
+            <h2>Parking Slots</h2>
+
+            <div class="parking-grid">
+                <div class="slot">Slot 1 <span>Available</span></div>
+                <div class="slot">Slot 2 <span>Available</span></div>
+                <div class="slot">Slot 3 <span>Available</span></div>
+                <div class="slot">Slot 4 <span>Available</span></div>
+                <div class="slot">Slot 5 <span>Available</span></div>
+            </div>
+        </section>
+
+        <section id="manage" class="panel">
+            <h2>Manage Vehicles</h2>
+
+            <div class="form-box">
+                <label for="vehicle">Vehicle Number</label>
+                <input type="text" id="vehicle"
+                       placeholder="Enter vehicle number">
+
+                <div class="button-group">
+                    <button type="button">Park Vehicle</button>
+                    <button type="button" class="remove">
+                        Remove Vehicle
+                    </button>
+                    <button type="button" class="search">
+                        Search Vehicle
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Waiting Vehicles</h2>
+            <p class="empty">No vehicles waiting.</p>
+        </section>
+
+        <section id="records" class="panel">
+            <h2>Parking Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>Vehicle Number</th>
+                        <th>Parking Slot</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="empty">
+                            No parking records available.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>Parking History</h2>
+            <p class="empty">No history available.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Smart Parking Management System</p>
+        <p>Developed by Nandana Raj | AJC25CS157</p>
+        <p>Computer Science and Engineering</p>
+    </footer>
+
+</body>
+</html>
